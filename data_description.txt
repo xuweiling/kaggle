@@ -1,0 +1,525 @@
+MSSubClass: Identifies the type of dwelling involved in the sale.	
+	识别销售涉及的住宅类型。
+        20	1-STORY 1946 & NEWER ALL STYLES
+        30	1-STORY 1945 & OLDER
+        40	1-STORY W/FINISHED ATTIC ALL AGES
+        45	1-1/2 STORY - UNFINISHED ALL AGES
+        50	1-1/2 STORY FINISHED ALL AGES
+        60	2-STORY 1946 & NEWER
+        70	2-STORY 1945 & OLDER
+        75	2-1/2 STORY ALL AGES
+        80	SPLIT OR MULTI-LEVEL
+        85	SPLIT FOYER
+        90	DUPLEX - ALL STYLES AND AGES
+       120	1-STORY PUD (Planned Unit Development) - 1946 & NEWER
+       150	1-1/2 STORY PUD - ALL AGES
+       160	2-STORY PUD - 1946 & NEWER
+       180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER
+       190	2 FAMILY CONVERSION - ALL STYLES AND AGES
+
+MSZoning: Identifies the general zoning classification of the sale.
+	标识销售的一般分区分类。	
+       A	Agriculture
+       C	Commercial
+       FV	Floating Village Residential
+       I	Industrial
+       RH	Residential High Density
+       RL	Residential Low Density
+       RP	Residential Low Density Park 
+       RM	Residential Medium Density     
+       excel中包含的类型RL、RM、C、FV、RH
+
+	
+LotFrontage: Linear feet of street connected to property 地块正面：街道的线性脚连接到财产
+ 
+LotArea: Lot size in square feet     地块面积：地块面积为平方英尺
+
+Street: Type of road access to property  街道：道路通行权的类型
+
+       Grvl	Gravel	碎石
+       Pave	Paved	铺装
+       	
+Alley: Type of alley access to property  胡同：通往物业的胡同类型
+
+       Grvl	Gravel
+       Pave	Paved
+       NA 	No alley access   没有小巷访问
+		
+LotShape: General shape of property	地块形状：一般形状的财产
+
+       Reg	Regular	规则
+       IR1	Slightly irregular
+       IR2	Moderately Irregular
+       IR3	Irregular	不规则
+       
+LandContour: Flatness of the property	陆地轮廓：物业的平整度
+
+       Lvl	Near Flat/Level	近平/水平
+       Bnk	Banked - Quick and significant rise from street grade to building	从街道等级到建筑物的快速而显着的增长
+       HLS	Hillside - Significant slope from side to side	山坡 - 从一侧到另一侧的显着坡度
+       Low	Depression	洼地
+		
+Utilities: Type of utilities available	公用事业：可用的公用事业类型
+		
+       AllPub	All public Utilities (E,G,W,& S)		所有公用事业（E，G，W和S）
+       NoSewr	Electricity, Gas, and Water (Septic Tank)		电力，燃气和水（化粪池）
+       NoSeWa	Electricity and Gas Only	仅限电力和天然气
+       ELO	Electricity only	仅限电力
+	
+LotConfig: Lot configuration 批量配置
+
+       Inside	Inside lot		里面
+       Corner	Corner lot	 角落
+       CulDSac	Cul-de-sac	死路
+       FR2	Frontage on 2 sides of property	正面两侧
+       FR3	Frontage on 3 sides of property	正面三面
+	
+LandSlope: Slope of property	物业坡度
+		
+       Gtl	Gentle slope 	温柔的斜坡
+       Mod	Moderate Slope	温柔的斜坡
+       Sev	Severe Slope	严重坡度
+	
+Neighborhood: Physical locations within Ames city limits	Ames城市范围内的物理位置
+
+       Blmngtn	Bloomington Heights 布卢明顿高地
+       Blueste	Bluestem 布卢明顿高地
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	South & West of Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+			
+Condition1: Proximity to various conditions	接近各种条件
+	
+       Artery	Adjacent to arterial street	毗邻主干道
+       Feedr	Adjacent to feeder street		邻近馈线街
+       Norm	Normal		规范标准
+       RRNn	Within 200' of North-South Railroad	在南北铁路的200'范围内
+       RRAn	Adjacent to North-South Railroad	毗邻南北铁路
+       PosN	Near positive off-site feature--park, greenbelt, etc.	近正面场外功能 - 公园，绿地等
+       PosA	Adjacent to postive off-site feature	毗邻积极的场外功能
+       RRNe	Within 200' of East-West Railroad	东西铁路200'以内
+       RRAe	Adjacent to East-West Railroad	毗邻东西铁路
+	
+Condition2: Proximity to various conditions (if more than one is present)	接近各种条件（如果存在多个条件）
+		
+       Artery	Adjacent to arterial street	毗邻主干道
+       Feedr	Adjacent to feeder street	邻近馈线街
+       Norm	Normal		?规范标准
+       RRNn	Within 200' of North-South Railroad	在南北铁路的200'范围内
+       RRAn	Adjacent to North-South Railroad	毗邻南北铁路
+       PosN	Near positive off-site feature--park, greenbelt, etc.	近正面场外功能 - 公园，绿地等
+       PosA	Adjacent to postive off-site feature	毗邻积极的场外功能
+       RRNe	Within 200' of East-West Railroad	东西铁路200'以内
+       RRAe	Adjacent to East-West Railroad	毗邻东西铁路
+	
+BldgType: Type of dwelling	住宅类型
+		
+       1Fam	Single-family Detached	单户独立式
+       2FmCon	Two-family Conversion; originally built as one-family dwelling	双族转换; 最初是作为一个家庭住宅建造的
+       Duplx	Duplex	复式
+       TwnhsE	Townhouse End Unit	联排别墅结束单位
+       TwnhsI	Townhouse Inside Unit
+	
+HouseStyle: Style of dwelling	住宅风格
+	
+       1Story	One story		一个故事
+       1.5Fin	One and one-half story: 2nd level finished	一个半故事：第二级完成
+       1.5Unf	One and one-half story: 2nd level unfinished	一个半故事：二级未完成
+       2Story	Two story		两个故事
+       2.5Fin	Two and one-half story: 2nd level finished	两个半故事：第二级完成
+       2.5Unf	Two and one-half story: 2nd level unfinished	两个半故事：二级未完成
+       SFoyer	Split Foyer
+       SLvl	Split Level	分层
+	
+OverallQual: Rates the overall material and finish of the house	评估房屋的整体材料和完工情况
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average
+       5	Average
+       4	Below Average
+       3	Fair
+       2	Poor
+       1	Very Poor
+	
+OverallCond: Rates the overall condition of the house	评估房屋的整体状况
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average	
+       5	Average
+       4	Below Average	
+       3	Fair
+       2	Poor
+       1	Very Poor
+		
+YearBuilt: Original construction date	原始施工日期
+
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions) 重塑日期（如果没有改造或添加，则与施工日期相同）
+
+RoofStyle: Type of roof	屋顶类型
+
+       Flat	Flat	平坦的
+       Gable	Gable
+       Gambrel	Gabrel (Barn)
+       Hip	Hip
+       Mansard	Mansard
+       Shed	Shed	棚
+		
+RoofMatl: Roof material	屋顶材料
+
+       ClyTile	Clay or Tile	粘土或瓷砖
+       CompShg	Standard (Composite) Shingle		标准（复合）木瓦
+       Membran	Membrane	膜
+       Metal	Metal	金属金属
+       Roll	Roll	轧辊
+       Tar&Grv	Gravel & Tar
+       WdShake	Wood Shakes
+       WdShngl	Wood Shingles
+		
+Exterior1st: Exterior covering on house	房屋外墙
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       BrkComm	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast	
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       WdShing	Wood Shingles
+	
+Exterior2nd: Exterior covering on house (if more than one material)	房屋外墙（如果有多种材料）
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       BrkComm	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       WdShing	Wood Shingles
+	
+MasVnrType: Masonry veneer type	砌体贴面类型
+
+       BrkCmn	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       None	None
+       Stone	Stone
+	
+MasVnrArea: Masonry veneer area in square feet	平方英尺的砌体饰面区域
+
+ExterQual: Evaluates the quality of the material on the exterior 	评估外部材料的质量
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+ExterCond: Evaluates the present condition of the material on the exterior 评估外部材料的现状
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+Foundation: Type of foundation	基础类型
+		
+       BrkTil	Brick & Tile
+       CBlock	Cinder Block
+       PConc	Poured Contrete	
+       Slab	Slab
+       Stone	Stone
+       Wood	Wood
+		
+BsmtQual: Evaluates the height of the basement		评估地下室的高度
+
+       Ex	Excellent (100+ inches)	
+       Gd	Good (90-99 inches)
+       TA	Typical (80-89 inches)
+       Fa	Fair (70-79 inches)
+       Po	Poor (<70 inches
+       NA	No Basement
+		
+BsmtCond: Evaluates the general condition of the basement		评估地下室的一般情况
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical - slight dampness allowed
+       Fa	Fair - dampness or some cracking or settling
+       Po	Poor - Severe cracking, settling, or wetness
+       NA	No Basement
+	
+BsmtExposure: Refers to walkout or garden level walls	指花园层墙
+
+       Gd	Good Exposure
+       Av	Average Exposure (split levels or foyers typically score average or above)	
+       Mn	Mimimum Exposure
+       No	No Exposure
+       NA	No Basement
+	
+BsmtFinType1: Rating of basement finished area	地下室完工区域的评级
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+		
+BsmtFinSF1: Type 1 finished square feet		类型1完成平方英尺
+
+BsmtFinType2: Rating of basement finished area (if multiple types)	地下室成品区域的评级（如果有多种类型）
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+
+BsmtFinSF2: Type 2 finished square feet 	2型成品平方英尺
+
+BsmtUnfSF: Unfinished square feet of basement area	地下室未完成的平方英尺
+
+TotalBsmtSF: Total square feet of basement area		地下室总面积
+
+Heating: Type of heating	加热类型
+			
+       Floor	Floor Furnace	地板炉
+       GasA	Gas forced warm air furnace	Gas强制加热空气炉
+       GasW	Gas hot water or steam heat	Gas热水或蒸汽加热
+       Grav	Gravity furnace	重力炉
+       OthW	Hot water or steam heat other than gas		除了气体之外的热水或蒸汽加热
+       Wall	Wall furnace	壁挂炉
+		
+HeatingQC: Heating quality and condition	加热质量和条件
+
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+CentralAir: Central air conditioning	中央空调
+
+       N	No
+       Y	Yes
+		
+Electrical: Electrical system	电气系统
+
+       SBrkr	Standard Circuit Breakers & Romex	标准断路器和Romex
+       FuseA	Fuse Box over 60 AMP and all Romex wiring (Average)	
+       FuseF	60 AMP Fuse Box and mostly Romex wiring (Fair)
+       FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)
+       Mix	Mixed
+		
+1stFlrSF: First Floor square feet	一楼平方英尺
+ 
+2ndFlrSF: Second floor square feet	二楼平方英尺
+
+LowQualFinSF: Low quality finished square feet (all floors)	低质量的平方英尺（所有楼层）
+
+GrLivArea: Above grade (ground) living area square feet	以上（地面）生活区平方英尺
+
+BsmtFullBath: Basement full bathrooms		地下室齐全的浴室
+
+BsmtHalfBath: Basement half bathrooms	地下室半浴室
+
+FullBath: Full bathrooms above grade	满级以上的浴室
+
+HalfBath: Half baths above grade	半年级以上的洗浴
+
+Bedroom: Bedrooms above grade (does NOT include basement bedrooms)  卧室：楼层以上的卧室（不包括地下室卧室）
+
+Kitchen: Kitchens above grade		厨房：厨房以上
+
+KitchenQual: Kitchen quality	厨房质量
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       	
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)	以上级别的房间总数（不包括浴室）
+
+Functional: Home functionality (Assume typical unless deductions are warranted)	家庭功能（假设除非有必要进行扣除）
+
+       Typ	Typical Functionality
+       Min1	Minor Deductions 1
+       Min2	Minor Deductions 2
+       Mod	Moderate Deductions
+       Maj1	Major Deductions 1
+       Maj2	Major Deductions 2
+       Sev	Severely Damaged
+       Sal	Salvage only
+		
+Fireplaces: Number of fireplaces	壁炉数量
+
+FireplaceQu: Fireplace quality		壁炉质量
+
+       Ex	Excellent - Exceptional Masonry Fireplace
+       Gd	Good - Masonry Fireplace in main level
+       TA	Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement
+       Fa	Fair - Prefabricated Fireplace in basement
+       Po	Poor - Ben Franklin Stove
+       NA	No Fireplace
+		
+GarageType: Garage location	车库位置
+		
+       2Types	More than one type of garage
+       Attchd	Attached to home
+       Basment	Basement Garage
+       BuiltIn	Built-In (Garage part of house - typically has room above garage)
+       CarPort	Car Port
+       Detchd	Detached from home
+       NA	No Garage
+		
+GarageYrBlt: Year garage was built	年车库建成
+		
+GarageFinish: Interior finish of the garage	车库的内部装饰
+
+       Fin	Finished
+       RFn	Rough Finished	
+       Unf	Unfinished
+       NA	No Garage
+		
+GarageCars: Size of garage in car capacity	车库容量的车库大小
+
+GarageArea: Size of garage in square feet	车库面积（平方英尺）
+
+GarageQual: Garage quality		车库质量
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+GarageCond: Garage condition	车库状况
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+PavedDrive: Paved driveway	铺好的车道
+
+       Y	Paved 
+       P	Partial Pavement
+       N	Dirt/Gravel
+		
+WoodDeckSF: Wood deck area in square feet	平方英尺的木甲板面积
+
+OpenPorchSF: Open porch area in square feet	平方英尺的开放式门廊区域
+
+EnclosedPorch: Enclosed porch area in square feet		封闭式门廊面积，平方英尺
+
+3SsnPorch: Three season porch area in square feet		三个季节的门廊面积，平方英尺
+
+ScreenPorch: Screen porch area in square feet	屏幕门廊面积，平方英尺
+	
+PoolArea: Pool area in square feet	泳池面积，平方英尺
+
+PoolQC: Pool quality	泳池质量
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       NA	No Pool
+		
+Fence: Fence quality		栅栏质量
+		
+       GdPrv	Good Privacy
+       MnPrv	Minimum Privacy
+       GdWo	Good Wood
+       MnWw	Minimum Wood/Wire
+       NA	No Fence
+	
+MiscFeature: Miscellaneous feature not covered in other categories	其他类别未涵盖的其他功能
+		
+       Elev	Elevator
+       Gar2	2nd Garage (if not described in garage section)
+       Othr	Other
+       Shed	Shed (over 100 SF)
+       TenC	Tennis Court
+       NA	None
+		
+MiscVal: $Value of miscellaneous feature	$杂项功能的价值
+
+MoSold: Month Sold (MM)	已售出月份（MM）
+
+YrSold: Year Sold (YYYY)	已售出年份（YYYY）
+
+SaleType: Type of sale	销售类型
+		
+       WD 	Warranty Deed - Conventional	保修契约 - 常规
+       CWD	Warranty Deed - Cash	保修契约 - 现金
+       VWD	Warranty Deed - VA Loan	保修契约 - VA贷款
+       New	Home just constructed and sold	新房刚刚建成并出售
+       COD	Court Officer Deed/Estate	法院官员契约/遗产
+       Con	Contract 15% Down payment regular terms	15％首付常规条款
+       ConLw	Contract Low Down payment and low interest	合同低首付和低利息
+       ConLI	Contract Low Interest	合约低利率
+       ConLD	Contract Low Down		合约低跌
+       Oth	Other	其他
+		
+SaleCondition: Condition of sale	销售条件
+
+       Normal	Normal Sale
+       Abnorml	Abnormal Sale -  trade, foreclosure, short sale
+       AdjLand	Adjoining Land Purchase
+       Alloca	Allocation - two linked properties with separate deeds, typically condo with a garage unit	
+       Family	Sale between family members
+       Partial	Home was not completed when last assessed (associated with New Homes)
