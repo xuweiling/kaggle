@@ -4,6 +4,7 @@
 # 况下时，我们可以直接把所有特征放进去建模，不需要考虑特征选取。
 from sklearn.linear_model import Ridge
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.decomposition import PCA
 from xgboost import XGBRegressor
 from sklearn.ensemble import BaggingRegressor
 from sklearn.model_selection import cross_val_score #用交叉验证来测试模型
@@ -26,12 +27,17 @@ df_test = df_test.ix[:, df_train.columns].fillna(0)
 #检查是否有空值
 # print(np.isnan(df_train).any())
 
+# print(df_train.info())
+# print(df_test.info())
 #这一步是在把DataFrame转换成Numpy Array格式，这一步不是必要的，只是便于之后的工作
 X_train = df_train.drop('SalePrice', 1, inplace=False).values
 y_train = df_train['SalePrice'].values
 X_test = df_test.drop('SalePrice', 1, inplace=False).values
 
-
+#去除共线性，效果反而降低
+# pca = PCA(n_components=221)
+# X_train = pca.fit_transform(X_train)
+# X_test = pca.transform(X_test)
 
 # 接下来使用交叉验证去找到模型最佳参数.
 # 简单来说，交叉验证的好处就是考虑了多种可能之后，
